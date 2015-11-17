@@ -1,5 +1,5 @@
 # Welcome to the World of Automated Acceptance Testing
-Example code for getting started with automated acceptance testing
+So you want to get started with automated acceptance testing? This is the repo for you.
 
 ##Prerequisites
 1. [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
