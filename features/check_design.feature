@@ -1,3 +1,4 @@
+@design
 Feature: Approved Design
 	In order to maintain a consistent branding within the application
 	As the designer
