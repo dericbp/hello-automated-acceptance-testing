@@ -48,7 +48,20 @@ When(/^I enter hello in the text area$/) do
 end
 
 Then(/^I should see avast$/) do
-  expect(page).to have_selector('#translatedText', :text => "avast") #this approach is used to avoid potential timing issues
+  expect(page).to have_selector('#translatedText', :text => "avast").or  have_selector('#translatedText', :text => "ahoy")#this approach is used to avoid potential timing issues
+  time = Time.now.to_s
+  page.save_screenshot("./screenshots/check_all_steps_screenshot-" + time +".jpg", :full => true)
+end
+
+When(/^I enter walk the plank in the text area$/) do
+  visit 'http://127.0.0.1:8000'
+  expect(page).to have_css("textarea") #checks for a text area form field
+  fill_in 'originalText', :with => 'walk the plank'
+  click_button('translateBTN')
+end
+
+Then(/^I should see walk yonder plank or walk ye plank$/) do
+  expect(page).to have_selector('#translatedText', :text => "walk yonder plank").or have_selector('#translatedText', :text => "walk ye plank")#example of compound expectation
   time = Time.now.to_s
   page.save_screenshot("./screenshots/check_all_steps_screenshot-" + time +".jpg", :full => true)
 end

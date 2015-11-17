@@ -8,3 +8,8 @@ Feature: Translate Text
 		Given that I am a visitor to the Talk Like A Pirate Web Application
 		When I enter hello in the text area
 		Then I should see avast
+
+	Scenario: English translation for walk the plank
+		Given that I am a visitor to the Talk Like A Pirate Web Application
+		When I enter walk the plank in the text area
+		Then I should see walk yonder plank or walk ye plank
