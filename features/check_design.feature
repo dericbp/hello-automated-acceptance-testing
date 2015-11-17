@@ -1,4 +1,4 @@
-Feature: Check Design
+Feature: Approved Design
 	In order to maintain a consistent branding within the application
 	As the designer
 	I want a design layout that matches the created mockups
