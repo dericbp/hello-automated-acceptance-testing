@@ -1,4 +1,4 @@
-# hello-automated-acceptance-testing
+# Welcome to the World of Automated Acceptance Testing
 Example code for getting started with automated acceptance testing
 
 ##Prerequisites
