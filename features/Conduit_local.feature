@@ -1,15 +1,12 @@
-@functionality
-Feature: Translate Text
-	In order to help people on Talk Like A Pirate Day
-	As a stakeholder
-	I want English text to be translated to pirate talk
+@conduit
+Feature: Approved Design
+    In order to maintain a consistent functionality within the Application
+    As the developer 
+    I want a design layout that matches the created mockups
 
-	Scenario: English translation for hello
-		Given that I am a visitor to the Talk Like A Pirate Web Application
-		When I enter hello in the text area
-		Then I should see avast
-
-	Scenario: English translation for walk the plank
-		Given that I am a visitor to the Talk Like A Pirate Web Application
-		When I enter walk the plank in the text area
-		Then I should see walk yonder plank or walk ye plank
+    Scenario: Test Conduit login Page
+        Given that I am a visitor to the ConduitBpcs Wep Application
+        When I visit the main conduit app page for the first time
+        Then I should be routed to the Azure Login page
+        Then I should try logging in using my Azure credentials
+        Then I should be routed to the Conduit Create A connector Homepage
